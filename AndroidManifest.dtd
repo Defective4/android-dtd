@@ -1,0 +1,301 @@
+<!ELEMENT activity ( intent-filter*, meta-data*, layout* ) >
+<!ATTLIST activity android:allowEmbedded (true|false) "false">
+<!ATTLIST activity android:allowTaskReparenting (true|false) "false">
+<!ATTLIST activity android:alwaysRetainTaskState (true|false) "false">
+<!ATTLIST activity android:autoRemoveFromRecents (true|false) "false">
+<!ATTLIST activity android:banner CDATA #IMPLIED >
+<!ATTLIST activity android:canDisplayOnRemoteDevices (true|false) "false" >
+<!ATTLIST activity android:clearTaskOnLaunch (true|false) "false" >
+<!ATTLIST activity android:colorMode CDATA #IMPLIED >
+<!ATTLIST activity android:configChanges CDATA #IMPLIED >
+<!ATTLIST activity android:directBootAware (true|false) "false" >
+<!ATTLIST activity android:documentLaunchMode CDATA #IMPLIED >
+<!ATTLIST activity android:enableOnBackInvokedCallback (true|false) "false" >
+<!ATTLIST activity android:enabled (true|false) "false" >
+<!ATTLIST activity android:excludeFromRecents (true|false) "false" >
+<!ATTLIST activity android:exported (true|false) "false" >
+<!ATTLIST activity android:finishOnTaskLaunch (true|false) "false" >
+<!ATTLIST activity android:hardwareAccelerated (true|false) "false" >
+<!ATTLIST activity android:icon CDATA #IMPLIED >
+<!ATTLIST activity android:immersive (true|false) "false" >
+<!ATTLIST activity android:label CDATA #REQUIRED >
+<!ATTLIST activity android:launchMode CDATA #IMPLIED >
+<!ATTLIST activity android:lockTaskMode CDATA #IMPLIED >
+<!ATTLIST activity android:maxAspectRatio CDATA #IMPLIED >
+<!ATTLIST activity android:maxRecents CDATA #IMPLIED >
+<!ATTLIST activity android:minAspectRatio CDATA #IMPLIED >
+<!ATTLIST activity android:multiprocess (true|false) "false" >
+<!ATTLIST activity android:name CDATA #REQUIRED >
+<!ATTLIST activity android:noHistory (true|false) "false" >
+<!ATTLIST activity android:parentActivityName CDATA #IMPLIED >
+<!ATTLIST activity android:permission CDATA #IMPLIED >
+<!ATTLIST activity android:persistableMode CDATA #IMPLIED >
+<!ATTLIST activity android:process CDATA #IMPLIED >
+<!ATTLIST activity android:relinquishTaskIdentity (true|false) "false" >
+<!ATTLIST activity android:requireContentUriPermissionFromCaller CDATA #IMPLIED >
+<!ATTLIST activity android:resizeableActivity (true|false) "false" >
+<!ATTLIST activity android:screenOrientation CDATA #IMPLIED >
+<!ATTLIST activity android:showForAllUsers (true|false) "false" >
+<!ATTLIST activity android:stateNotNeeded (true|false) "false" >
+<!ATTLIST activity android:supportsPictureInPicture (true|false) "false" >
+<!ATTLIST activity android:taskAffinity CDATA #IMPLIED >
+<!ATTLIST activity android:theme CDATA #IMPLIED >
+<!ATTLIST activity android:uiOptions CDATA #IMPLIED >
+<!ATTLIST activity android:windowSoftInputMode CDATA #IMPLIED >
+
+<!ELEMENT activity-alias EMPTY >
+<!ATTLIST activity-alias android:enabled (true|false) "false" >
+<!ATTLIST activity-alias android:exported (true|false) "false" >
+<!ATTLIST activity-alias android:icon CDATA #IMPLIED >
+<!ATTLIST activity-alias android:label CDATA #IMPLIED >
+<!ATTLIST activity-alias android:name CDATA #IMPLIED >
+<!ATTLIST activity-alias android:permission CDATA #IMPLIED >
+<!ATTLIST activity-alias android:targetActivity CDATA #IMPLIED >
+
+<!ELEMENT application ( activity*, activity-alias*, service*, receiver*, profileable*, provider*, uses-library*, uses-native-library* ) >
+<!ATTLIST application android:allowBackup (true|false) "false" >
+<!ATTLIST application android:allowClearUserData (true|false) "false" >
+<!ATTLIST application android:allowNativeHeapPointerTagging (true|false) "false" >
+<!ATTLIST application android:allowTaskReparenting (true|false) "false" >
+<!ATTLIST application android:appCategory CDATA #IMPLIED >
+<!ATTLIST application android:backupAgent CDATA #IMPLIED >
+<!ATTLIST application android:backupInForeground CDATA #IMPLIED >
+<!ATTLIST application android:banner CDATA #IMPLIED >
+<!ATTLIST application android:dataExtractionRules CDATA #IMPLIED >
+<!ATTLIST application android:debuggable (true|false) "false" >
+<!ATTLIST application android:description CDATA #IMPLIED >
+<!ATTLIST application android:enableOnBackInvokedCallback (true|false) "false" >
+<!ATTLIST application android:enabled (true|false) "false" >
+<!ATTLIST application android:extractNativeLibs (true|false) "false" >
+<!ATTLIST application android:fullBackupContent CDATA #IMPLIED >
+<!ATTLIST application android:fullBackupOnly (true|false) "false" >
+<!ATTLIST application android:gwpAsanMode CDATA #IMPLIED >
+<!ATTLIST application android:hardwareAccelerated CDATA #IMPLIED >
+<!ATTLIST application android:hasCode (true|false) "false" >
+<!ATTLIST application android:hasFragileUserData (true|false) "false" >
+<!ATTLIST application android:icon CDATA #IMPLIED >
+<!ATTLIST application android:isGame (true|false) "false" >
+<!ATTLIST application android:isMonitoringTool (true|false) "false" >
+<!ATTLIST application android:killAfterRestore (true|false) "false" >
+<!ATTLIST application android:label CDATA #REQUIRED >
+<!ATTLIST application android:largeHeap (true|false) "false" >
+<!ATTLIST application android:logo CDATA #IMPLIED >
+<!ATTLIST application android:manageSpaceActivity CDATA #IMPLIED >
+<!ATTLIST application android:name CDATA #IMPLIED >
+<!ATTLIST application android:networkSecurityConfig CDATA #IMPLIED >
+<!ATTLIST application android:permission CDATA #IMPLIED >
+<!ATTLIST application android:persistent (true|false) "false" >
+<!ATTLIST application android:process CDATA #IMPLIED >
+<!ATTLIST application android:requestLegacyExternalStorage CDATA #IMPLIED >
+<!ATTLIST application android:requiredAccountType CDATA #IMPLIED >
+<!ATTLIST application android:resizeableActivity (true|false) "false" >
+<!ATTLIST application android:restoreAnyVersion (true|false) "false" >
+<!ATTLIST application android:restrictedAccountType CDATA #IMPLIED >
+<!ATTLIST application android:supportsRtl (true|false) "false" >
+<!ATTLIST application android:taskAffinity CDATA #IMPLIED >
+<!ATTLIST application android:testOnly (true|false) "false" >
+<!ATTLIST application android:theme CDATA #IMPLIED >
+<!ATTLIST application android:uiOptions CDATA #IMPLIED >
+<!ATTLIST application android:usesCleartextTraffic (true|false) "false" >
+<!ATTLIST application android:vmSafeMode (true|false) "false" >
+
+<!ELEMENT attribution EMPTY >
+<!ATTLIST attribution android:label CDATA #IMPLIED >
+<!ATTLIST attribution android:tag CDATA #IMPLIED >
+
+<!ELEMENT category EMPTY >
+<!ATTLIST category android:name CDATA #REQUIRED >
+
+<!ELEMENT compatible-screens ( screen* ) >
+
+<!ELEMENT data EMPTY >
+<!ATTLIST data android:fragment CDATA #IMPLIED >
+<!ATTLIST data android:fragmentAdvancedPattern CDATA #IMPLIED >
+<!ATTLIST data android:fragmentPattern CDATA #IMPLIED >
+<!ATTLIST data android:fragmentPrefix CDATA #IMPLIED >
+<!ATTLIST data android:fragmentSuffix CDATA #IMPLIED >
+<!ATTLIST data android:host CDATA #IMPLIED >
+<!ATTLIST data android:mimeType CDATA #IMPLIED >
+<!ATTLIST data android:path CDATA #IMPLIED >
+<!ATTLIST data android:pathAdvancedPattern CDATA #IMPLIED >
+<!ATTLIST data android:pathPattern CDATA #IMPLIED >
+<!ATTLIST data android:pathPrefix CDATA #IMPLIED >
+<!ATTLIST data android:pathSuffix CDATA #IMPLIED >
+<!ATTLIST data android:port CDATA #IMPLIED >
+<!ATTLIST data android:query CDATA #IMPLIED >
+<!ATTLIST data android:queryAdvancedPattern CDATA #IMPLIED >
+<!ATTLIST data android:queryPattern CDATA #IMPLIED >
+<!ATTLIST data android:queryPrefix CDATA #IMPLIED >
+<!ATTLIST data android:querySuffix CDATA #IMPLIED >
+<!ATTLIST data android:scheme CDATA #IMPLIED >
+
+<!ELEMENT grant-uri-permission EMPTY >
+<!ATTLIST grant-uri-permission android:path CDATA #IMPLIED >
+<!ATTLIST grant-uri-permission android:pathPattern CDATA #IMPLIED >
+<!ATTLIST grant-uri-permission android:pathPrefix CDATA #IMPLIED >
+
+<!ELEMENT instrumentation EMPTY >
+<!ATTLIST instrumentation android:functionalTest (true|false) "false" >
+<!ATTLIST instrumentation android:handleProfiling (true|false) "false" >
+<!ATTLIST instrumentation android:icon CDATA #IMPLIED >
+<!ATTLIST instrumentation android:label CDATA #IMPLIED >
+<!ATTLIST instrumentation android:name CDATA #IMPLIED >
+<!ATTLIST instrumentation android:targetPackage CDATA #IMPLIED >
+<!ATTLIST instrumentation android:targetProcesses CDATA #IMPLIED >
+
+<!ELEMENT intent-filter ( category*, data*, uri-relative-filter-group*, action ) >
+<!ATTLIST intent-filter android:icon CDATA #IMPLIED >
+<!ATTLIST intent-filter android:label CDATA #IMPLIED >
+<!ATTLIST intent-filter android:priority CDATA #IMPLIED >
+
+<!ELEMENT action EMPTY >
+<!ATTLIST action android:name CDATA #REQUIRED >
+
+<!ELEMENT layout EMPTY >
+<!ATTLIST layout android:defaultHeight CDATA #IMPLIED >
+<!ATTLIST layout android:defaultWidth CDATA #IMPLIED >
+<!ATTLIST layout android:gravity CDATA #IMPLIED >
+<!ATTLIST layout android:minHeight CDATA #IMPLIED >
+<!ATTLIST layout android:minWidth CDATA #IMPLIED >
+
+<!ELEMENT manifest ( attribution*, compatible-screens*, instrumentation*, permission*, permission-group*, permission-tree*, supports-gl-texture*, supports-screens*, uses-configuration*, uses-feature*, uses-permission*, uses-permission-sdk-23*, uses-sdk*, application ) >
+<!ATTLIST manifest android:installLocation CDATA #IMPLIED >
+<!ATTLIST manifest android:sharedUserId CDATA #IMPLIED >
+<!ATTLIST manifest android:sharedUserLabel CDATA #IMPLIED >
+<!ATTLIST manifest android:sharedUserMaxSdkVersion CDATA #IMPLIED >
+<!ATTLIST manifest android:versionCode CDATA #REQUIRED >
+<!ATTLIST manifest android:versionName CDATA #REQUIRED >
+<!ATTLIST manifest package CDATA #REQUIRED >
+<!ATTLIST manifest xmlns:android CDATA #FIXED "http://schemas.android.com/apk/res/android" >
+
+<!ELEMENT meta-data EMPTY >
+<!ATTLIST meta-data android:name CDATA #IMPLIED >
+<!ATTLIST meta-data android:resource CDATA #IMPLIED >
+<!ATTLIST meta-data android:value CDATA #IMPLIED >
+
+<!ELEMENT path-permission EMPTY >
+<!ATTLIST path-permission android:path CDATA #IMPLIED >
+<!ATTLIST path-permission android:pathPattern CDATA #IMPLIED >
+<!ATTLIST path-permission android:pathPrefix CDATA #IMPLIED >
+<!ATTLIST path-permission android:permission CDATA #IMPLIED >
+<!ATTLIST path-permission android:readPermission CDATA #IMPLIED >
+<!ATTLIST path-permission android:writePermission CDATA #IMPLIED >
+
+<!ELEMENT permission EMPTY >
+<!ATTLIST permission android:description CDATA #IMPLIED >
+<!ATTLIST permission android:icon CDATA #IMPLIED >
+<!ATTLIST permission android:label CDATA #IMPLIED >
+<!ATTLIST permission android:name CDATA #REQUIRED >
+<!ATTLIST permission android:permissionGroup CDATA #IMPLIED >
+<!ATTLIST permission android:protectionLevel CDATA #IMPLIED >
+
+<!ELEMENT permission-group EMPTY >
+<!ATTLIST permission-group android:description CDATA #IMPLIED >
+<!ATTLIST permission-group android:icon CDATA #IMPLIED >
+<!ATTLIST permission-group android:label CDATA #IMPLIED >
+<!ATTLIST permission-group android:name CDATA #IMPLIED >
+
+<!ELEMENT permission-tree EMPTY >
+<!ATTLIST permission-tree android:icon CDATA #IMPLIED >
+<!ATTLIST permission-tree android:label CDATA #IMPLIED >
+<!ATTLIST permission-tree android:name CDATA #IMPLIED >
+
+<!ELEMENT profileable EMPTY >
+<!ATTLIST profileable android:enabled (true|false) "false" >
+<!ATTLIST profileable android:shell CDATA #IMPLIED >
+
+<!ELEMENT provider ( grant-uri-permission*, path-permission* ) >
+<!ATTLIST provider android:authorities CDATA #IMPLIED >
+<!ATTLIST provider android:directBootAware (true|false) "false" >
+<!ATTLIST provider android:enabled (true|false) "false" >
+<!ATTLIST provider android:exported (true|false) "false" >
+<!ATTLIST provider android:grantUriPermissions (true|false) "false" >
+<!ATTLIST provider android:icon CDATA #IMPLIED >
+<!ATTLIST provider android:initOrder CDATA #IMPLIED >
+<!ATTLIST provider android:label CDATA #IMPLIED >
+<!ATTLIST provider android:multiprocess (true|false) "false" >
+<!ATTLIST provider android:name CDATA #IMPLIED >
+<!ATTLIST provider android:permission CDATA #IMPLIED >
+<!ATTLIST provider android:process CDATA #IMPLIED >
+<!ATTLIST provider android:readPermission CDATA #IMPLIED >
+<!ATTLIST provider android:syncable (true|false) "false" >
+<!ATTLIST provider android:writePermission CDATA #IMPLIED >
+
+<!ELEMENT receiver EMPTY >
+<!ATTLIST receiver android:directBootAware (true|false) "false" >
+<!ATTLIST receiver android:enabled (true|false) "false" >
+<!ATTLIST receiver android:exported (true|false) "false" >
+<!ATTLIST receiver android:icon CDATA #IMPLIED >
+<!ATTLIST receiver android:label CDATA #IMPLIED >
+<!ATTLIST receiver android:name CDATA #IMPLIED >
+<!ATTLIST receiver android:permission CDATA #IMPLIED >
+<!ATTLIST receiver android:process CDATA #IMPLIED >
+
+<!ELEMENT screen EMPTY >
+<!ATTLIST screen android:screenDensity CDATA #FIXED "" >
+<!ATTLIST screen android:screenSize CDATA #FIXED "" >
+
+<!ELEMENT service EMPTY >
+<!ATTLIST service android:description CDATA #IMPLIED >
+<!ATTLIST service android:directBootAware (true|false) "false" >
+<!ATTLIST service android:enabled (true|false) "false" >
+<!ATTLIST service android:exported (true|false) "false" >
+<!ATTLIST service android:foregroundServiceType CDATA #IMPLIED >
+<!ATTLIST service android:icon CDATA #IMPLIED >
+<!ATTLIST service android:isolatedProcess (true|false) "false" >
+<!ATTLIST service android:label CDATA #IMPLIED >
+<!ATTLIST service android:name CDATA #IMPLIED >
+<!ATTLIST service android:permission CDATA #IMPLIED >
+<!ATTLIST service android:process CDATA #IMPLIED >
+<!ATTLIST service android:stopWithTask (true|false) "false" >
+
+<!ELEMENT supports-gl-texture EMPTY >
+<!ATTLIST supports-gl-texture android:name CDATA #IMPLIED >
+
+<!ELEMENT supports-screens EMPTY >
+<!ATTLIST supports-screens android:anyDensity (true|false) "false" >
+<!ATTLIST supports-screens android:compatibleWidthLimitDp (true|false) "false" >
+<!ATTLIST supports-screens android:largeScreens (true|false) "false" >
+<!ATTLIST supports-screens android:largestWidthLimitDp (true|false) "false" >
+<!ATTLIST supports-screens android:normalScreens (true|false) "false" >
+<!ATTLIST supports-screens android:requiresSmallestWidthDp CDATA #IMPLIED >
+<!ATTLIST supports-screens android:resizeable (true|false) "false" >
+<!ATTLIST supports-screens android:smallScreens CDATA #IMPLIED >
+<!ATTLIST supports-screens android:xlargeScreens CDATA #IMPLIED >
+
+<!ELEMENT uri-relative-filter-group ( data* ) >
+<!ATTLIST uri-relative-filter-group android:allow (true|false) "false" >
+
+<!ELEMENT uses-configuration EMPTY >
+<!ATTLIST uses-configuration android:reqFiveWayNav (true|false) "false" >
+<!ATTLIST uses-configuration android:reqHardKeyboard (true|false) "false" >
+<!ATTLIST uses-configuration android:reqKeyboardType CDATA #IMPLIED >
+<!ATTLIST uses-configuration android:reqNavigation CDATA #IMPLIED >
+<!ATTLIST uses-configuration android:reqTouchScreen CDATA #IMPLIED >
+
+<!ELEMENT uses-feature EMPTY >
+<!ATTLIST uses-feature android:glEsVersion CDATA #IMPLIED >
+<!ATTLIST uses-feature android:name CDATA #IMPLIED >
+<!ATTLIST uses-feature android:required (true|false) "false" >
+
+<!ELEMENT uses-library EMPTY >
+<!ATTLIST uses-library android:name CDATA #IMPLIED >
+<!ATTLIST uses-library android:required (true|false) "false" >
+
+<!ELEMENT uses-native-library EMPTY >
+<!ATTLIST uses-native-library android:name CDATA #IMPLIED >
+<!ATTLIST uses-native-library android:required (true|false) "false" >
+
+<!ELEMENT uses-permission EMPTY >
+<!ATTLIST uses-permission android:maxSdkVersion CDATA #IMPLIED >
+<!ATTLIST uses-permission android:name CDATA #REQUIRED >
+
+<!ELEMENT uses-permission-sdk-23 EMPTY >
+<!ATTLIST uses-permission-sdk-23 android:maxSdkVersion CDATA #IMPLIED >
+<!ATTLIST uses-permission-sdk-23 android:name CDATA #IMPLIED >
+
+<!ELEMENT uses-sdk EMPTY >
+<!ATTLIST uses-sdk android:maxSdkVersion CDATA #IMPLIED >
+<!ATTLIST uses-sdk android:minSdkVersion CDATA #REQUIRED >
+<!ATTLIST uses-sdk android:targetSdkVersion CDATA #REQUIRED >
+
