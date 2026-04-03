@@ -176,7 +176,7 @@
 <!ATTLIST layout android:minHeight CDATA #IMPLIED >
 <!ATTLIST layout android:minWidth CDATA #IMPLIED >
 
-<!ELEMENT manifest ( attribution*, compatible-screens*, instrumentation*, permission*, permission-group*, permission-tree*, supports-gl-texture*, supports-screens*, uses-configuration*, uses-feature*, uses-permission*, uses-permission-sdk-23*, uses-sdk*, application ) >
+<!ELEMENT manifest ( attribution*, compatible-screens*, instrumentation*, permission*, permission-group*, permission-tree*, supports-gl-texture*, supports-screens*, uses-configuration*, uses-feature*, uses-permission*, uses-permission-sdk-23*, uses-sdk, application ) >
 <!ATTLIST manifest android:installLocation (auto | internalOnly | preferExternal) "auto" >
 <!ATTLIST manifest android:sharedUserId CDATA #IMPLIED >
 <!ATTLIST manifest android:sharedUserLabel CDATA #IMPLIED >
